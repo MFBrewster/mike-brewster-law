@@ -8,7 +8,7 @@ button, [type='button'], [type='reset'], [type='submit'] {
   appearance: none;
   background-color: #1565c0;
   border: 0;
-  border-radius: 3px;
+  border-radius: 0.5em;
   color: #fff;
   cursor: pointer;
   display: inline-block;
@@ -59,7 +59,7 @@ textarea {
 select[multiple] {
   background-color: #fff;
   border: 1px solid #ddd;
-  border-radius: 3px;
+  border-radius: 0.5em;
   box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.06);
   box-sizing: border-box;
   margin-bottom: 0.75em;
@@ -188,5 +188,35 @@ hr {
   border-right: 0;
   border-top: 0;
   margin: 1.5em 0; }
+
+body {
+  padding-top: 4em;
+  max-width: 800px;
+  margin: 0 auto; }
+
+#intro-image {
+  height: 500px;
+  border: 0.25em solid #30302F;
+  margin: 0 12%;
+  border-radius: 0.5em;
+  background-image: url("../../images/fountain.jpg");
+  background-size: cover;
+  position: relative; }
+  #intro-image div {
+    position: relative;
+    height: 2.4em;
+    top: 66%;
+    left: -5%;
+    background: linear-gradient(90deg, rgba(0, 50, 86, 0.8), rgba(0, 50, 86, 0.6) 80%, rgba(0, 50, 86, 0));
+    margin: .5em;
+    padding: .5em 0 0 1em; }
+    #intro-image div h1 {
+      color: #ddd; }
+
+@media (max-width: 500px) {
+  #intro-image {
+    margin: 0 3%; }
+    #intro-image div {
+      left: 1.5%; } }
 
 /*# sourceMappingURL=style.css.map */

@@ -1,3 +1,47 @@
 @import "bourbon/bourbon";
 @import "neat/neat";
 @import "base/base";
+
+$border-color: #30302F;
+
+$banner-color: rgba(0, 50, 86, .8);
+$banner-color-fade1: rgba(0, 50, 86, .6);
+$banner-color-fade2: rgba(0, 50, 86, 0);
+
+body {
+  padding-top: 4em;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+#intro-image {
+  height: 500px;
+  border: .25em solid $border-color;
+  margin: 0 12%;
+  border-radius: $base-border-radius;
+  background-image: url("../../images/fountain.jpg");
+  background-size: cover;
+  position: relative;
+
+  div {
+    position: relative;
+    height: $base-line-height + .9em;
+    top: 66%;
+    left: -5%;
+    background: linear-gradient(90deg, $banner-color, $banner-color-fade1 80%, $banner-color-fade2);
+    margin: .5em;
+    padding: .5em 0 0 1em;
+    h1 {
+      color: #ddd;
+    }
+  }
+}
+
+@media (max-width: 500px) {
+  #intro-image {
+    margin: 0 3%;
+    div {
+      left: 1.5%;
+    }
+  }
+}
