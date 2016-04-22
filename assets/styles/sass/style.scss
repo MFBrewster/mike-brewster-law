@@ -3,6 +3,7 @@
 @import "base/base";
 
 $border-color: #30302F;
+$border-width: .25em;
 
 $banner-color: rgba(0, 50, 86, .8);
 $banner-color-fade1: rgba(0, 50, 86, .6);
@@ -12,17 +13,22 @@ body {
   padding-top: 4em;
   max-width: 800px;
   margin: 0 auto;
+  text-align: left;
+  font-family: times, Times New Roman, times-roman, georgia, serif;
+  letter-spacing: -0.5px;
+}
+
+div {
+  margin: 0 12%;
+  position: relative;
 }
 
 #intro-image {
   height: 500px;
-  border: .25em solid $border-color;
-  margin: 0 12%;
+  border: $border-width solid $border-color;
   border-radius: $base-border-radius;
   background-image: url("../../images/fountain.jpg");
   background-size: cover;
-  position: relative;
-
   div {
     position: relative;
     height: $base-line-height + .9em;
@@ -37,11 +43,22 @@ body {
   }
 }
 
-@media (max-width: 500px) {
-  #intro-image {
-    margin: 0 3%;
-    div {
-      left: 1.5%;
-    }
+nav {
+  text-align: center;
+  ul {
+    padding: 1.5em;
+  }
+  li {
+    display: inline;
+    padding: 0 2em 0 2em;
+  }
+}
+
+@media (max-width: 450px) {
+  div {
+    margin: 0;
+  }
+  #intro-image div {
+    left: 1.5%;
   }
 }

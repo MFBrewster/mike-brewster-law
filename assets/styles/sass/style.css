@@ -192,16 +192,21 @@ hr {
 body {
   padding-top: 4em;
   max-width: 800px;
-  margin: 0 auto; }
+  margin: 0 auto;
+  text-align: left;
+  font-family: times, Times New Roman, times-roman, georgia, serif;
+  letter-spacing: -0.5px; }
+
+div {
+  margin: 0 12%;
+  position: relative; }
 
 #intro-image {
   height: 500px;
   border: 0.25em solid #30302F;
-  margin: 0 12%;
   border-radius: 0.5em;
   background-image: url("../../images/fountain.jpg");
-  background-size: cover;
-  position: relative; }
+  background-size: cover; }
   #intro-image div {
     position: relative;
     height: 2.4em;
@@ -213,10 +218,19 @@ body {
     #intro-image div h1 {
       color: #ddd; }
 
-@media (max-width: 500px) {
-  #intro-image {
-    margin: 0 3%; }
-    #intro-image div {
-      left: 1.5%; } }
+nav {
+  text-align: center; }
+  nav ul {
+    padding: 1.5em; }
+  nav li {
+    display: inline;
+    padding: 0 2em 0 2em; }
+
+@media (max-width: 450px) {
+  div {
+    margin: 0; }
+
+  #intro-image div {
+    left: 1.5%; } }
 
 /*# sourceMappingURL=style.css.map */
