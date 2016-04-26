@@ -191,7 +191,7 @@ hr {
 
 body {
   padding: 3em 2.5em 2em 2.5em;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   text-align: left;
   font-family: Enriqueta;
@@ -301,6 +301,8 @@ div.q-and-a {
       text-align: justify; }
       div.q-and-a div.row div.answer:last-child {
         margin-right: 0; }
+      div.q-and-a div.row div.answer h5 {
+        text-align: left; }
       div.q-and-a div.row div.answer div.method {
         float: left;
         display: block;
@@ -313,8 +315,7 @@ div.q-and-a {
         float: left;
         display: block;
         margin-right: 3.57866%;
-        width: 74.10533%;
-        margin-right: 0; }
+        width: 74.10533%; }
         div.q-and-a div.row div.answer div.details:last-child {
           margin-right: 0; }
   div.q-and-a div img {

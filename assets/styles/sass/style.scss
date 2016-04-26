@@ -15,7 +15,7 @@ $banner-color-fade2: rgba(0, 50, 86, 0);
 
 body {
   padding: 3em 2.5em 2em 2.5em;
-  max-width: 800px;
+  max-width: 900px;
   margin: 0 auto;
   text-align: left;
   font-family: Enriqueta;
@@ -124,6 +124,9 @@ div.q-and-a {
       @include span-columns(8);
       @include omega;
       text-align: justify;
+      h5 {
+        text-align: left;
+      }
       div.method {
         @include span-columns(2 of 8);
         font-weight: bold;
@@ -131,7 +134,7 @@ div.q-and-a {
       }
       div.details {
         @include span-columns(6 of 8);
-        @include omega;
+        // @include omega;
       }
     }
   }
