@@ -190,47 +190,134 @@ hr {
   margin: 1.5em 0; }
 
 body {
-  padding-top: 4em;
+  padding: 3em 2.5em 2em 2.5em;
   max-width: 800px;
   margin: 0 auto;
   text-align: left;
-  font-family: times, Times New Roman, times-roman, georgia, serif;
-  letter-spacing: -0.5px; }
+  font-family: Enriqueta;
+  letter-spacing: -0.5px;
+  color: #30302F; }
 
 div {
-  margin: 0 12%;
   position: relative; }
+
+div#contact {
+  border-radius: 0;
+  padding: .25em 2.5em 0 2.5em;
+  height: 2em;
+  font-size: 1.25em;
+  color: #ddd;
+  text-align: center;
+  background: #30302F; }
+  div#contact a {
+    color: inherit;
+    /* blue colors for links too */
+    text-decoration: inherit;
+    /* no underline */ }
+  div#contact #email {
+    float: left;
+    transition: text-shadow 0.2s; }
+  div#contact #email:hover {
+    text-shadow: #eee 0 0 2px;
+    cursor: pointer; }
+  div#contact #phone {
+    float: right; }
 
 #intro-image {
   height: 500px;
   border: 0.25em solid #30302F;
-  border-radius: 0.5em;
+  border-radius: 0;
   background-image: url("../../images/fountain.jpg");
   background-size: cover; }
   #intro-image div {
     position: relative;
-    height: 2.4em;
+    height: 2.75em;
     top: 66%;
     left: -5%;
+    background: rgba(0, 50, 86, 0.8);
     background: linear-gradient(90deg, rgba(0, 50, 86, 0.8), rgba(0, 50, 86, 0.6) 80%, rgba(0, 50, 86, 0));
     margin: .5em;
     padding: .5em 0 0 1em; }
     #intro-image div h1 {
-      color: #ddd; }
+      color: #ddd;
+      font-size: 1.5em;
+      text-shadow: #30302F 1px 1px 2px; }
 
-nav {
-  text-align: center; }
-  nav ul {
-    padding: 1.5em; }
-  nav li {
-    display: inline;
-    padding: 0 2em 0 2em; }
+div#navbar {
+  border-radius: 0;
+  padding: .25em 3.6em 0 2.5em;
+  height: 2em;
+  font-size: 1.25em;
+  color: #ddd;
+  text-align: center;
+  background: #30302F; }
+  div#navbar div {
+    transition: text-shadow 0.2s; }
+  div#navbar div:hover {
+    text-shadow: #eee 0 0 1px;
+    cursor: pointer; }
+  div#navbar div#nav-planning {
+    float: left; }
+  div#navbar div#nav-me {
+    float: right; }
 
-@media (max-width: 450px) {
-  div {
-    margin: 0; }
-
-  #intro-image div {
-    left: 1.5%; } }
+div.q-and-a {
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3em; }
+  div.q-and-a::after {
+    clear: both;
+    content: "";
+    display: block; }
+  div.q-and-a h2 {
+    text-align: left;
+    margin-bottom: .4em;
+    font-size: 1.4em; }
+  div.q-and-a div.row {
+    display: block;
+    background: #f6f6f6;
+    padding: .75em; }
+    div.q-and-a div.row::after {
+      clear: both;
+      content: "";
+      display: block; }
+    div.q-and-a div.row div.question {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 31.76157%; }
+      div.q-and-a div.row div.question:last-child {
+        margin-right: 0; }
+      div.q-and-a div.row div.question h5 {
+        font-weight: normal;
+        color: #DE730A; }
+    div.q-and-a div.row div.answer {
+      float: left;
+      display: block;
+      margin-right: 2.35765%;
+      width: 65.88078%;
+      margin-right: 0;
+      text-align: justify; }
+      div.q-and-a div.row div.answer:last-child {
+        margin-right: 0; }
+      div.q-and-a div.row div.answer div.method {
+        float: left;
+        display: block;
+        margin-right: 3.57866%;
+        width: 22.316%;
+        font-weight: bold; }
+        div.q-and-a div.row div.answer div.method:last-child {
+          margin-right: 0; }
+      div.q-and-a div.row div.answer div.details {
+        float: left;
+        display: block;
+        margin-right: 3.57866%;
+        width: 74.10533%;
+        margin-right: 0; }
+        div.q-and-a div.row div.answer div.details:last-child {
+          margin-right: 0; }
+  div.q-and-a div img {
+    border: 0.0625em solid #30302F; }
 
 /*# sourceMappingURL=style.css.map */
