@@ -227,7 +227,7 @@ div#contact {
   height: 500px;
   border: 0.25em solid #30302F;
   border-radius: 0;
-  background-image: url("../../images/fountain.jpg");
+  background-image: url("../images/fountain.jpg");
   background-size: cover; }
   #intro-image div {
     position: relative;
